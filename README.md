@@ -137,20 +137,45 @@ The EasyEnsembleClassifier algorithm does the following:
 
 Below are the results from the various techniques used to predictive model for High-Risk loans.
 
+### Oversampling
 
+Using oversampling, it can be observed that the high risk precision is 1%, its recall is 69%, while the low risk has a 100% precision but the recall has 59% of accuracy.
 
+![Captura de pantalla (941)](https://user-images.githubusercontent.com/86340630/138388760-34e3e71c-a492-4957-acb6-815b05e39741.png)
 
+### SMOTE oversampling
 
+With SMOTE oversampling, the high risk precision is 1% and the recall is 63%. The low risk has a precision of 100% while the recall is 69%.
 
+![Captura de pantalla (943)](https://user-images.githubusercontent.com/86340630/138389366-21c5a034-e8d3-473a-a105-473110f21236.png)
 
+### Undersampling
 
+Undersampling presents an accuracy in high risk precision of 1% and a recall of 69%. The low risk presents a precision of 100% and a recall of 40%.
 
+![Captura de pantalla (945)](https://user-images.githubusercontent.com/86340630/138389718-af9f19c9-a160-4351-a1a4-1d52cd30cbdb.png)
 
+### Combination sampling
 
+Combination sampling (under and oversampling), high risk precision has a percentage of 1% and the recall 72%. The low risk presents a precision of 100% but the recall is 57%.
 
+![Captura de pantalla (947)](https://user-images.githubusercontent.com/86340630/138390074-1d4d74ef-4c59-480f-8ff1-7acacb42766b.png)
 
+### Balanced random forest
 
+Balanced ramdom forest, presents a high risk precision of 3% and a recall of 67%. The low risk has a precision of 100% and a recall of 87%. In this case, the high risk precision improved a bit.
 
+![Captura de pantalla (949)](https://user-images.githubusercontent.com/86340630/138390856-344a14c4-1257-4f86-a659-d217dfaf272e.png)
+
+### AdaBoost
+
+AdaBoost, has a high risk precision of 9% and a recall of 92%, it also has a low risk of 100% and a recall of 94%.
+
+![Captura de pantalla (951)](https://user-images.githubusercontent.com/86340630/138391259-bd703aad-d384-4745-8565-66e193b1318e.png)
+
+### Summary:
+
+With the results obtained, using F1 as a metric, and considering the respective precision and recovery, the best models were Balanced Random Forests and AdaBoost. Even if those models were the ones with significant precision, none of the models should be used to predict high risks due to low precision in the respective risk percentage.
 
 
 
